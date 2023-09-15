@@ -23,3 +23,5 @@ src/output.css
 *.njsproj
 *.sln
 *.sw?
+
+output.css
