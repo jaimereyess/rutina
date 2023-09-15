@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jaimereyess.github.io/rutina",
+  "homepage": "https://jaimereyess.github.io/rutina/",
   "scripts": {
     "predeploy": "bun run build",
     "deploy": "gh-pages -d dist",
