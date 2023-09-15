@@ -11,9 +11,9 @@ const Nav = () => {
     <>
       <nav className="flex items-center justify-between flex-wrap bg-darkpurple p-6 text-white">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <span className="font-bold text-xxl tracking-tight text-white">
+          <a href="/" className="font-bold text-xxl tracking-tight text-white">
             Rutina
-          </span>
+          </a>
         </div>
         <div className="block lg:hidden">
           <button
@@ -30,22 +30,34 @@ const Nav = () => {
         >
           <div className="text-sm lg:flex-grow">
             <a
-              href="#responsive-header"
+              href="Monday"
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
             >
-              Docs
+              Lunes
             </a>
             <a
-              href="#responsive-header"
+              href="Tuesday"
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
             >
-              Examples
+              Martes
             </a>
             <a
-              href="#responsive-header"
+              href="Wednesday"
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
             >
-              Blog
+              Miercoles
+            </a>
+            <a
+              href="Thursday"
+              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+            >
+              Jueves
+            </a>
+            <a
+              href="Friday"
+              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+            >
+              Viernes
             </a>
           </div>
         </div>
