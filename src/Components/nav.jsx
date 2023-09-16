@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,9 +12,9 @@ const Nav = () => {
     <>
       <nav className="flex items-center justify-between flex-wrap bg-darkpurple p-6 text-white">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <a href="/" className="font-bold text-xxl tracking-tight text-white">
+          <Link to="/" className="font-bold text-xxl tracking-tight text-white">
             Rutina
-          </a>
+          </Link>
         </div>
         <div className="block lg:hidden">
           <button
@@ -24,41 +25,40 @@ const Nav = () => {
           </button>
         </div>
         <div
-          className={`w-full block lg:flex lg:items-center lg:w-auto ${
-            isMenuOpen ? "" : "hidden"
-          }`}
+          className={`w-full block lg:flex lg:items-center lg:w-auto ${isMenuOpen ? "" : "hidden"
+            }`}
         >
           <div className="text-sm lg:flex-grow">
-            <a
-              href="Monday"
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            <Link
+              to="/monday"
+              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 py-2" // Añade py-2 para el relleno vertical
             >
               Lunes
-            </a>
-            <a
-              href="Tuesday"
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            </Link>
+            <Link
+              to="/tuesday"
+              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 py-2" // Añade py-2 para el relleno vertical
             >
               Martes
-            </a>
-            <a
-              href="Wednesday"
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+            </Link>
+            <Link
+              to="/wednesday"
+              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 py-2" // Añade py-2 para el relleno vertical
             >
-              Miercoles
-            </a>
-            <a
-              href="Thursday"
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+              Miércoles
+            </Link>
+            <Link
+              to="/thursday"
+              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 py-2" // Añade py-2 para el relleno vertical
             >
               Jueves
-            </a>
-            <a
-              href="Friday"
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+            </Link>
+            <Link
+              to="/friday"
+              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white py-2" // Añade py-2 para el relleno vertical
             >
               Viernes
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

@@ -1,5 +1,6 @@
 import Nav from "../Components/nav";
 
+
 const HomePage = () => {
   return (
     <>

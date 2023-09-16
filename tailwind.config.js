@@ -9,7 +9,8 @@ export default {
       colors: {
         'darkpurple': "#451952",
         'maroon': "#662549",
-        'orange': "#F39F5A"
+        'orange': "#F39F5A",
+        'darkgrey': "#333"
       }
 
     }
