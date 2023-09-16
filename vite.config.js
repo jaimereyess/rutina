@@ -1,8 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
-// https://vitejs.dev/config/
+const isProduction = process.env.NODE_ENV === 'production'
+
 export default defineConfig({
-  base: '/dist/',
   plugins: [react()],
+  base: isProduction ? 'https://jaimereyess.github.io/Word-counter/' : '',
+  build: {
+    outDir: 'dist'
+
+  }
 })
