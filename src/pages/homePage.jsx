@@ -1,13 +1,15 @@
 import Nav from "../Components/nav";
+import LeterDays from "../Components/days";
+import Exercise from "../Components/exercise";
+import Zone from "../Components/zoneExercise";
 
-
-const HomePage = () => {
+function HomePage() {
   return (
-    <>
+    <div className=" min-h-screen bg-darkgrey text-white pb-2">
       <Nav />
-      <h1 className="mt-2 text-3xl font-bold underline text-center">Hello world!</h1>
-    </>
+      <LeterDays day="HomePage" />
+    </div>
   );
-};
+}
 
 export default HomePage;
