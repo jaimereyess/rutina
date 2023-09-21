@@ -1,3 +1,10 @@
+import {
+    Card,
+    CardContent,
+    CardHeader,
+    CardTitle,
+} from "./ui/card";
+
 const exerciseColor = ({ bodyPart }) => {
     switch (bodyPart) {
         case 'Pecho':
@@ -22,16 +29,24 @@ const exerciseColor = ({ bodyPart }) => {
 }
 
 
-const Exercise = ({ exercisename, sets, repetitions, rir, zone }) => {
+const Exercise = ({ exercisename, sets, repetitions, rir, zone, img }) => {
     return (
-        <section>
-            <h1 className={`text-2xl font-bold ${exerciseColor({ bodyPart: zone })}`}>{exercisename}</h1>
+        <Card>
+            <CardHeader>
+                <CardTitle className={`text-2xl font-bold
+                        ${exerciseColor({ bodyPart: zone })}`}>{exercisename}
+                </CardTitle>
+            </CardHeader>
+            <CardContent className="pb-2">
+                <img src={img}></img>
+                <section className="pt-4">
+                    <p>Series: {sets}</p>
+                    <p>Repeticiones: {repetitions}</p>
+                    <p>RIR: {rir}</p>
+                </section>
 
-            <p>Series: {sets}</p>
-            <p>Repeticiones: {repetitions}</p>
-            <p>RIR: {rir}</p>
-        </section>
-
+            </CardContent>
+        </Card>
     )
 }
 

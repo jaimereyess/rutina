@@ -15,7 +15,7 @@ import HomePage from "./pages/homePage";
 
 const router = createBrowserRouter([
   {
-    path: "",
+    path: "/rutina",
     element: <HomePage />,
     errorElement: <ErrorPage />
   },

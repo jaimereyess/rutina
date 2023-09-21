@@ -12,7 +12,7 @@ const Nav = () => {
     <>
       <nav className="flex items-center justify-between flex-wrap bg-darkpurple p-6 text-white">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <Link to="/" className="font-bold text-xxl tracking-tight text-white">
+          <Link to="/rutina" className="font-bold text-xxl tracking-tight text-white">
             Rutina
           </Link>
         </div>
@@ -31,31 +31,31 @@ const Nav = () => {
           <div className="text-sm lg:flex-grow">
             <Link
               to="/monday"
-              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 py-2" // Añade py-2 para el relleno vertical
+              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 py-2"
             >
               Lunes
             </Link>
             <Link
               to="/tuesday"
-              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 py-2" // Añade py-2 para el relleno vertical
+              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 py-2"
             >
               Martes
             </Link>
             <Link
               to="/wednesday"
-              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 py-2" // Añade py-2 para el relleno vertical
+              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 py-2"
             >
               Miércoles
             </Link>
             <Link
               to="/thursday"
-              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 py-2" // Añade py-2 para el relleno vertical
+              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 py-2"
             >
               Jueves
             </Link>
             <Link
               to="/friday"
-              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white py-2" // Añade py-2 para el relleno vertical
+              className="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white py-2"
             >
               Viernes
             </Link>
