@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://jaimereyess.github.io/rutina",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "bun run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
