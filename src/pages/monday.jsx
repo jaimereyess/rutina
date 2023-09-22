@@ -2,15 +2,11 @@ import Nav from "../Components/nav";
 import LeterDays from "../Components/days";
 import Exercise from "../Components/exercise";
 import Zone from "../Components/zoneExercise";
-import Sidebar from "../Components/sidebar";
 
 function Monday() {
   return (
     <div className=" min-h-screen bg-darkgrey text-white pb-2 grid ">
-      <div className="lg:w-1/16">
-        <Sidebar />
 
-      </div>
       <div className="">
         <Nav />
         <LeterDays day="Lunes" />

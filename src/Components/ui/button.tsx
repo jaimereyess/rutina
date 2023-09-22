@@ -26,6 +26,9 @@ const buttonVariants = cva(
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
       },
+      navButtons: {
+        nav: "p-10 rounded-md block lg:inline-block lg:mt-0 mr-4 py-2"
+      }
     },
     defaultVariants: {
       variant: "default",
