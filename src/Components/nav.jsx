@@ -14,7 +14,7 @@ const Nav = () => {
     <>
       <nav className="flex items-center justify-between flex-wrap bg-black p-6 text-white">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <Link to="/rutina" className="font-bold text-3xl tracking-tight text-white">
+          <Link to="/" className="font-bold text-3xl tracking-tight text-white">
             Rutina
           </Link>
         </div>
@@ -31,14 +31,21 @@ const Nav = () => {
             }`} >
 
           <div>
-            {/*//variant ghost => hover:bg-accent hover:text-accent-foreground
-            //variant secondary => bg - secondary text - secondary - foreground hover: bg - secondary / 80*/}
+
+            {/*
+            variant ghost => hover:bg-accent hover:text-accent-foreground
+            variant secondary => bg-secondary text-secondary-foreground hover:bg-secondary/80
+            icon => h-11 rounded-md px-8
+            nav => p-10 rounded-md block lg:inline-block lg:mt-0 mr-4 py-2
+            */}
+
+
             <Link
               className={`${buttonVariants({
                 variant: location.pathname === "/monday" ? "secondary" : "ghost",
-                size: "icon",
+                size: "lg",
                 navButtons: "nav",
-              })} hover:bg-accent hover:text-accent-foreground`}
+              })}`}
               to="/monday"
             >
               Lunes
@@ -47,7 +54,7 @@ const Nav = () => {
             <Link
               className={`${buttonVariants({
                 variant: location.pathname === "/tuesday" ? "secondary" : "ghost",
-                size: "icon",
+                size: "lg",
                 navButtons: "nav",
               })}`}
               to="/tuesday"
@@ -58,7 +65,7 @@ const Nav = () => {
             <Link
               className={`${buttonVariants({
                 variant: location.pathname === "/wednesday" ? "secondary" : "ghost",
-                size: "icon",
+                size: "lg",
                 navButtons: "nav",
               })} `}
               to="/wednesday"
@@ -69,7 +76,7 @@ const Nav = () => {
             <Link
               className={`${buttonVariants({
                 variant: location.pathname === "/thursday" ? "secondary" : "ghost",
-                size: "icon",
+                size: "lg",
                 navButtons: "nav",
               })}`}
               to="/thursday"
@@ -80,7 +87,7 @@ const Nav = () => {
             <Link
               className={`${buttonVariants({
                 variant: location.pathname === "/friday" ? "secondary" : "ghost",
-                size: "icon",
+                size: "lg",
                 navButtons: "nav",
               })}`}
               to="/friday"

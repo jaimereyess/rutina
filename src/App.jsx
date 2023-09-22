@@ -13,7 +13,7 @@ function App() {
       <Nav />
       <BrowserRouter>
         <Routes>
-          <Route path="/rutina" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/monday" element={<Monday />} />
           <Route path="/tuesday" element={<Tuesday />} />
           <Route path="/wednesday" element={<Wednesday />} />

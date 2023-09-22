@@ -11,10 +11,11 @@ import Wednesday from "./pages/wednesday";
 import Thursday from "./pages/thursday";
 import Friday from "./pages/friday";
 import HomePage from "./pages/homePage";
+import "./output.css"
 
 const router = createBrowserRouter([
   {
-    path: "/rutina",
+    path: "/",
     element: <HomePage />,
     errorElement: <ErrorPage />
   },
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
     element: <Wednesday />
   },
   {
-    path: "/Thursday",
+    path: "/thursday",
     element: <Thursday />
   },
   {
