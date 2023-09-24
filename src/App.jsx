@@ -5,24 +5,22 @@ import Tuesday from "./pages/tuesday";
 import Wednesday from "./pages/wednesday";
 import Thursday from "./pages/thursday";
 import Friday from "./pages/friday";
-import Nav from "./Components/nav";
+import ErrorPage from "./error-page";
+
 
 function App() {
   return (
-    <>
-      <Nav />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/monday" element={<Monday />} />
-          <Route path="/tuesday" element={<Tuesday />} />
-          <Route path="/wednesday" element={<Wednesday />} />
-          <Route path="/thursday" element={<Thursday />} />
-          <Route path="/friday" element={<Friday />} />
-        </Routes>
-      </BrowserRouter>
-
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/monday" element={<Monday />} />
+        <Route path="/tuesday" element={<Tuesday />} />
+        <Route path="/wednesday" element={<Wednesday />} />
+        <Route path="/thursday" element={<Thursday />} />
+        <Route path="/friday" element={<Friday />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
