@@ -30,7 +30,7 @@ const Nav = () => {
           className={`w-full block lg:flex lg:items-center lg:w-auto ${isMenuOpen ? "" : "hidden"
             }`} >
 
-          <div>
+          <div className="grid text-left lg:flex lg:text-center">
 
             <Link
               className={`${buttonVariants({
