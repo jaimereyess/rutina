@@ -32,14 +32,6 @@ const Nav = () => {
 
           <div>
 
-            {/*
-            variant ghost => hover:bg-accent hover:text-accent-foreground
-            variant secondary => bg-secondary text-secondary-foreground hover:bg-secondary/80
-            icon => h-11 rounded-md px-8
-            nav => p-10 rounded-md block lg:inline-block lg:mt-0 mr-4 py-2
-            */}
-
-
             <Link
               className={`${buttonVariants({
                 variant: location.pathname === "/monday" ? "secondary" : "ghost",
