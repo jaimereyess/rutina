@@ -2,8 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,jsx}',
+    './components/**/*.{js,jsx}',
+    './app/**/*.{js,jsx}',
+    './src/**/*.{js,jsx}',
   ],
   theme: {
     container: {
@@ -20,6 +22,7 @@ module.exports = {
         maroon: "#662549",
         orange: "#F39F5A",
         darkgrey: "#333",
+
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
