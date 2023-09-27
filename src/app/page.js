@@ -1,13 +1,19 @@
 import Link from 'next/link'
 import DayPanel from '../components/days-panel'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-black">
-      <Link className="text-white text-3xl underline" href="./monday"> Empieza la rutina </Link>
 
-
-
+      <Image
+        src="/logo.png"
+        alt="rutina Logo"
+        className="dark:invert"
+        width={500}
+        height={500}
+        priority
+      />
 
 
       <div className="grid text-center w-full lg:w-full lg:mb-0 lg:grid-cols-5 lg:text-left text-white border-l-0 border-r-0">
