@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import DayPanel from '../components/days-panel'
 import Image from 'next/image'
 

@@ -1,11 +1,12 @@
 import Link from "next/link"
 
-const dayTranslation = {
+export const dayTranslation = {
     Lunes: "monday",
     Martes: "tuesday",
     Miércoles: "wednesday",
     Jueves: "thursday",
-    Viernes: "friday"
+    Viernes: "friday",
+    Perfil: "profile"
 }
 
 function DayPanel({ day, exercises }) {

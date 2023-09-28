@@ -1,16 +1,14 @@
 "use client"
-import React from 'react';
-import { usePathname } from 'next/navigation';
+import React, { useState } from 'react';
 import { buttonVariants } from "./ui/button";
 import Link from "next/link";
 import { signIn } from "next-auth/react";
-
-
-
+import NavDaysButtons from './days-buttons';
+import useScrollToTop from './scroll-top';
 
 const Nav = () => {
+    useScrollToTop();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const pathname = usePathname()
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -21,7 +19,7 @@ const Nav = () => {
         <>
             <nav className="flex items-center justify-between flex-wrap bg-black p-6 text-white">
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
-                    <Link href="/" onClick={handleClick} className="font-bold text-3xl tracking-tight text-white">
+                    <Link href="/" className="font-bold text-3xl tracking-tight text-white">
                         Rutina
                     </Link>
                 </div>
@@ -39,72 +37,12 @@ const Nav = () => {
 
                     <div className="grid lg:flex">
 
-                        <Link
-                            className={`${buttonVariants({
-                                variant: pathname === "/monday" ? "secondary" : "ghost",
-                                size: "lg",
-                                navButtons: "nav",
-                            })}`}
-                            href="/monday"
-                        >
-                            Lunes
-                        </Link>
-
-                        <Link
-                            className={`${buttonVariants({
-                                variant: pathname === "/tuesday" ? "secondary" : "ghost",
-                                size: "lg",
-                                navButtons: "nav",
-                            })}`}
-                            href="/tuesday"
-                        >
-                            Martes
-                        </Link>
-
-                        <Link
-                            className={`${buttonVariants({
-                                variant: pathname === "/wednesday" ? "secondary" : "ghost",
-                                size: "lg",
-                                navButtons: "nav",
-                            })} `}
-                            href="/wednesday"
-                        >
-                            Miércoles
-                        </Link>
-
-                        <Link
-                            className={`${buttonVariants({
-                                variant: pathname === "/thursday" ? "secondary" : "ghost",
-                                size: "lg",
-                                navButtons: "nav",
-                            })}`}
-                            href="/thursday"
-                        >
-                            Jueves
-                        </Link>
-
-                        <Link
-                            className={`${buttonVariants({
-                                variant: pathname === "/friday" ? "secondary" : "ghost",
-                                size: "lg",
-                                navButtons: "nav",
-                            })}`}
-                            href="/friday"
-                        >
-                            Viernes
-                        </Link>
-
-                        <Link
-                            className={`${buttonVariants({
-                                variant: pathname === "/profile" ? "secondary" : "ghost",
-                                size: "lg",
-                                navButtons: "nav",
-                            })}`}
-                            href="/profile"
-                        >
-                            Perfil
-                        </Link>
-
+                        <NavDaysButtons day="Lunes" />
+                        <NavDaysButtons day="Martes" />
+                        <NavDaysButtons day="Miércoles" />
+                        <NavDaysButtons day="Jueves" />
+                        <NavDaysButtons day="Viernes" />
+                        <NavDaysButtons day="Perfil" />
 
                         <button
                             onClick={() => signIn()}
@@ -115,7 +53,6 @@ const Nav = () => {
                         >
                             Sign In
                         </button>
-
                     </div>
                 </div>
             </nav>
