@@ -1,9 +1,10 @@
 "use client"
-import React, { useState } from 'react';
+import React from 'react';
 import { usePathname } from 'next/navigation';
 import { buttonVariants } from "./ui/button";
 import Link from "next/link";
 import { signIn } from "next-auth/react";
+
 
 
 
@@ -20,7 +21,7 @@ const Nav = () => {
         <>
             <nav className="flex items-center justify-between flex-wrap bg-black p-6 text-white">
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
-                    <Link href="/" className="font-bold text-3xl tracking-tight text-white">
+                    <Link href="/" onClick={handleClick} className="font-bold text-3xl tracking-tight text-white">
                         Rutina
                     </Link>
                 </div>
