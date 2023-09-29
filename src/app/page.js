@@ -1,3 +1,4 @@
+"use client"
 import DayPanel from '../components/days-panel'
 import Image from 'next/image'
 
@@ -24,5 +25,7 @@ export default function Home() {
 
       </div>
     </main>
+
+
   )
 }
