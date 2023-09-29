@@ -17,9 +17,9 @@ const Nav = () => {
 
     return (
         <>
-            <nav className="flex items-center justify-between flex-wrap bg-black p-6 text-white">
-                <div className="flex items-center flex-shrink-0 text-white mr-6">
-                    <Link href="/" className="font-bold text-3xl tracking-tight text-white">
+            <nav className="flex items-center justify-between flex-wrap dark:bg-black p-6 dark:text-white">
+                <div className="flex items-center flex-shrink-0 mr-6">
+                    <Link href="/" className="font-bold text-3xl tracking-tight dark:text-white">
                         Rutina
                     </Link>
                 </div>
