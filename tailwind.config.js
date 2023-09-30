@@ -25,6 +25,7 @@ module.exports = {
         maroon: "#662549",
         orange: "#F39F5A",
         darkgrey: "#333",
+        lightgrey: '#d7dbde',
 
 
         border: "hsl(var(--border))",

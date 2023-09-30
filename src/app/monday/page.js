@@ -4,7 +4,7 @@ import Zone from "@/src/components/zone-exercise";
 
 function Monday() {
     return (
-        <main className=" min-h-screen bg-black text-white pb-2 grid ">
+        <main className="min-h-screen pb-2 grid dark:text-white">
             <div>
                 <LeterDays day="Lunes" />
                 <div className="m-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">

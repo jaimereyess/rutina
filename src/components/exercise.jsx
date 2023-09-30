@@ -8,13 +8,13 @@ import {
 const exerciseColor = ({ bodyPart }) => {
     switch (bodyPart) {
         case 'Pecho':
-            return "text-red-400";
+            return "text-red-700";
         case 'Espalda':
-            return "text-emerald-300";
+            return "text-emerald-800";
         case 'Biceps':
             return "text-amber-600";
         case 'Triceps':
-            return "text-sky-300";
+            return "text-sky-800";
         case 'Deltoides':
             return "text-green-500";
         case 'Cuádriceps':
@@ -22,9 +22,9 @@ const exerciseColor = ({ bodyPart }) => {
         case 'Isquios':
             return "text-cyan-700";
         case 'Gluteos':
-            return "text-purple-400";
+            return "text-purple-600";
         case 'Gemelos':
-            return "text-yellow-500";
+            return "text-yellow-600";
     }
 }
 

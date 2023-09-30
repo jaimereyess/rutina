@@ -32,11 +32,10 @@ const NavDaysButtons = ({ day }) => {
                     variant: isActive ? "secondary" : "ghost",
                     size: "lg",
                     navButtons: "nav",
-                })}`}
+                })} `}
                 href={`/${dayTranslation[day]}`}
-
             >
-                {day}
+                <span className='font-bold'>{day}</span>
             </Link >
         </>
 

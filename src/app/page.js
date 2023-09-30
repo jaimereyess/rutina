@@ -4,22 +4,22 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 dark:bg-black ">
+    <main className="flex min-h-screen flex-col items-center justify-center  dark:bg-black ">
 
       <Image
         src="/logo-white.png"
         alt="rutina Logo"
-        className="dark:hidden"
-        width={500}
-        height={500}
+        className="dark:hidden "
+        width={600}
+        height={100}
         priority
       />
       <Image
         src="/logo.png"
         alt="rutina Logo"
         className="hidden dark:flex"
-        width={500}
-        height={500}
+        width={600}
+        height={100}
         priority
       />
 
