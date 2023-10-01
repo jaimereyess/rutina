@@ -4,10 +4,9 @@ import { buttonVariants } from "./ui/button";
 import Link from "next/link";
 import { signIn } from "next-auth/react";
 import NavDaysButtons from './days-buttons';
-import useScrollToTop from './scroll-top';
+import DarkToggle from "./dark.jsx"
 
 const Nav = () => {
-    useScrollToTop();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -53,6 +52,7 @@ const Nav = () => {
                         >
                             Sign In
                         </button>
+                        <DarkToggle />
                     </div>
                 </div>
             </nav>

@@ -19,6 +19,9 @@ module.exports = {
       backgroundImage: {
         'white-img': "url('/bg-white.png')",
       },
+      backgroundColor: {
+        'full-black': '#000'
+      },
       colors: {
 
         darkpurple: "#451952",

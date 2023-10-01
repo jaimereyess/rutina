@@ -13,7 +13,7 @@ function DayPanel({ day, exercises }) {
     return (
         <Link
             href={`/${dayTranslation[day]}`}
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:bg-lightgrey dark:hover:bg-gray-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"        >
+            className="group rounded-lg px-5 py-4 transition-colors hover:bg-lightgrey dark:hover:bg-gray-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"        >
             <h1 className={`mb-3 text-3xl font-semibold`}>
                 {day}{' '}
                 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
@@ -24,7 +24,6 @@ function DayPanel({ day, exercises }) {
                 <p key={index}>{exercise}</p>
             ))}
         </Link>
-
     )
 }
 

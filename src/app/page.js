@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center  dark:bg-black ">
+    <main className="flex min-h-screen flex-col items-center  dark:bg-black ">
 
       <Image
         src="/logo-white.png"
@@ -24,7 +24,7 @@ export default function Home() {
       />
 
 
-      <div className="grid text-center w-full lg:w-full lg:mb-0 lg:grid-cols-5 lg:text-left border-l-0 border-r-0 dark:text-white">
+      <div className="grid text-center w-full lg:w-full lg:mb-0 lg:grid-cols-5 lg:text-left border-l-0 border-r-0 dark:text-white px-20">
         <DayPanel day="Lunes" exercises={["Pecho", "Triceps", "Deltoides"]} />
         <DayPanel day="Martes" exercises={["Espalda", "Biceps", "Gemelos"]} />
         <DayPanel day="Miércoles" exercises={["Cuádriceps", "Isquios", "Gluteos", "Gemelos"]} />
