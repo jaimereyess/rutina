@@ -13,12 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className}`} >
-        <div className='bg-white-img dark:bg-full-black' >
           <Nav />
           <div className="flex">
             <div className="flex-1">{children}</div>
           </div >
-        </div>
       </body>
     </html >
   )
