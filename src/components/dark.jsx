@@ -1,18 +1,29 @@
-"use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const DarkToggle = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            setIsDarkMode(prefersDarkMode);
+
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme) {
+                document.documentElement.classList.add(savedTheme);
+            } else {
+                document.documentElement.classList.add(prefersDarkMode ? "dark" : "light");
+            }
+        }
+    }, []);
+
     const toggleDarkMode = () => {
         setIsDarkMode(!isDarkMode);
-        if (isDarkMode) {
-            document.documentElement.classList.remove('dark');
-        } else {
-            document.documentElement.classList.add('dark');
-        }
-    };
 
+        localStorage.setItem("theme", isDarkMode ? "light" : "dark");
+
+        document.documentElement.classList.toggle("dark");
+    };
 
     return (
         <div className={`bg-${isDarkMode ? 'black' : 'white'} text-${isDarkMode ? 'white' : 'black'} transition duration-500 ease-in-out dark:bg-gray-800 dark:text-white`}>
@@ -29,5 +40,3 @@ const DarkToggle = () => {
 };
 
 export default DarkToggle;
-
-
