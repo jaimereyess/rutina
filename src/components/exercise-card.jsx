@@ -4,8 +4,10 @@ import {
     CardHeader,
     CardTitle,
 } from "./ui/card";
+import { exercises } from "./zone-exercise";
 
-const exerciseColor = ({ bodyPart }) => {
+
+export const exerciseColor = ({ bodyPart }) => {
     switch (bodyPart) {
         case 'Pecho':
             return "text-red-700";
@@ -29,16 +31,22 @@ const exerciseColor = ({ bodyPart }) => {
 }
 
 
-const Exercise = ({ exercisename, sets, repetitions, rir, zone, img }) => {
+const ExerciseCard = ({ exercisename, sets, repetitions, rir }) => {
+
+    const exercise = exercises.find(exercise => exercise.name === exercisename);
+
+    const bodyPart = exercise ? exercise.bodyPart : null;
+
+    const exerciseColorClass = exerciseColor({ bodyPart });
+
     return (
         <Card>
             <CardHeader>
-                <CardTitle className={`text-2xl font-bold
-                        ${exerciseColor({ bodyPart: zone })}`}>{exercisename}
+                <CardTitle className={`text-2xl font-bold ${exerciseColorClass}`}>
+                    {exercisename}
                 </CardTitle>
             </CardHeader>
             <CardContent className="pb-2">
-                <img src={img}></img>
                 <section className="pt-4">
                     <p>Series: {sets}</p>
                     <p>Repeticiones: {repetitions}</p>
@@ -50,4 +58,7 @@ const Exercise = ({ exercisename, sets, repetitions, rir, zone, img }) => {
     )
 }
 
-export default Exercise
+
+
+
+export default ExerciseCard
