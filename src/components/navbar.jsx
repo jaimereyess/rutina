@@ -1,10 +1,9 @@
 "use client"
 import React, { useState } from 'react';
-import { buttonVariants } from "./ui/button";
 import Link from "next/link";
-import { signIn } from "next-auth/react";
 import NavDaysButtons from './days-buttons';
 import DarkToggle from "./dark.jsx"
+import LoginBtn from "./login-btn"
 
 const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,15 +42,7 @@ const Nav = () => {
                         <NavDaysButtons day="Viernes" />
                         <NavDaysButtons day="Perfil" />
 
-                        <button
-                            onClick={() => signIn()}
-                            className={`${buttonVariants({
-                                size: "lg",
-                                navButtons: "nav",
-                            })} bg-sky-400 px-3 py-2 rounded hover:text-black hover:bg-white`}
-                        >
-                            Sign In
-                        </button>
+                        <LoginBtn />
                         <DarkToggle />
                     </div>
                 </div>

@@ -1,6 +1,8 @@
 import Nav from '../components/navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { Providers } from "../components/providers.jsx"
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,10 +14,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-white-img`} >
-        <Nav />
-        <div>{children}</div>
+      <body className={inter.className}>
+        <Providers>
+          <Nav />
+          {children}
+        </Providers>
       </body>
-    </html >
+    </html>
   )
 }
