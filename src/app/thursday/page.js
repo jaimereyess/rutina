@@ -1,5 +1,5 @@
-import LeterDays from "@/src/components/days-letters";
-import ExerciseCard from "@/src/components/exercise-card";
+import LeterDays from "../../components/days-letters";
+import ExerciseCard from "../../components/exercise-card";
 
 function Thursday() {
     return (

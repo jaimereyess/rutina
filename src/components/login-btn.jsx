@@ -1,15 +1,16 @@
-import { useSession, signIn, signOut } from "next-auth/react"
+import { useSession, signIn } from "next-auth/react"
 import { buttonVariants } from "./ui/button";
+import { UserImage } from '../components/profile-img'
 
 
 export default function LoginBtn() {
     const { data: session } = useSession()
     if (session) {
         return (
-            <>
-                Signed in as {session.user.email} <br />
-                <button onClick={() => signOut()}>Sign out</button>
-            </>
+            <section className="px-6">
+                <UserImage img={session.user.image} w={50} h={50} >
+                </UserImage>
+            </section>
         )
     }
     return (

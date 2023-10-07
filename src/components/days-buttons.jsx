@@ -9,30 +9,16 @@ const NavDaysButtons = ({ day }) => {
 
     const pathname = usePathname()
 
-    const [isNavigating, setIsNavigating] = useState(false);
-
-    const handleLinkClick = () => {
-        if (!isNavigating) {
-            setIsNavigating(true);
-
-            setTimeout(() => {
-                setIsNavigating(false); // Restablecer la bandera de navegación.
-            }, 2000); // 2000 milisegundos = 2 segundos
-
-        }
-    };
-
     const isActive = pathname === `/${dayTranslation[day]}`
 
     return (
         <>
             <Link
-                onClick={handleLinkClick}
                 className={`${buttonVariants({
                     variant: isActive ? "secondary" : "ghost",
                     size: "lg",
                     navButtons: "nav",
-                })} `}
+                })} ease-in-out duration-300 `}
                 href={`/${dayTranslation[day]}`}
             >
                 <span className='font-bold'>{day}</span>

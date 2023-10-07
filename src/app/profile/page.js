@@ -1,11 +1,22 @@
-function Profile() {
-    return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24 dark:bg-black">
-            <h1 className="dark:text-white text-3xl underline font-bold">
-                Esto es el perfil
-            </h1>
-        </main>
-    )
-}
+"use client"
+import { useSession, signOut } from "next-auth/react"
+import { UserImage } from '../../components/profile-img'
 
+function Profile() {
+
+    const { data: session } = useSession()
+    if (session) {
+        return (
+            <main className="flex min-h-screen flex-col items-center dark:bg-black dark:text-white">
+                <span className="text-6xl font-bold p-20 underline">
+                    Bienvenido {session.user.name}
+                    <UserImage img={session.user.image} w={50} h={50} />
+                </span>
+                <button onClick={() => signOut()}>Sign out</button>
+
+            </main>
+        )
+    }
+
+}
 export default Profile

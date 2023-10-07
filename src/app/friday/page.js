@@ -1,6 +1,5 @@
-import LeterDays from "@/src/components/days-letters";
-import ExerciseCard from "@/src/components/exercise-card";
-import exercises, { Zone } from "@/src/components/zone-exercise";
+import LeterDays from "../../components/days-letters";
+import ExerciseCard from "../../components/exercise-card";
 
 function Friday() {
     return (
