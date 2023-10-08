@@ -1,6 +1,7 @@
 "use client"
 import { useSession, signOut } from "next-auth/react"
 import { UserImage } from '../../components/profile-img'
+import LoginBtn from "../../components/login-btn"
 
 function Profile() {
 
