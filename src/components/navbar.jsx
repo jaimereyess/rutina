@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import Link from "next/link";
 import NavDaysButtons from './days-buttons';
 import DarkToggle from "./dark.jsx"
-import LoginBtn from "./login-btn"
-
+import { useSession } from "next-auth/react"
+import { UserImage } from '../components/profile-img'
 
 const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,6 +12,29 @@ const Nav = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+    function profileBnt() {
+        const { data: session } = useSession()
+        if (session) {
+            return (
+                <span className="px-5">
+                    < UserImage img={session.user.image} w={50} h={50} />
+                </span >
+            )
+
+        } else {
+            return (
+                <Link
+                    href="/login "
+                    className={`text-white p-10 rounded-md lg:inline-block lg:mt-0
+                                    mr-4 py-2 h-11 px-8 bg-sky-400 hover:text-black hover:bg-white`}
+                >
+                    Sign In
+                </Link>
+            )
+
+        }
+    }
 
 
     return (
@@ -43,7 +66,8 @@ const Nav = () => {
                         <NavDaysButtons day="Viernes" />
                         <NavDaysButtons day="Perfil" />
 
-                        <LoginBtn />
+                        {profileBnt()}
+
                         <DarkToggle />
                     </div>
                 </div>
