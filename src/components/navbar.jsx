@@ -6,7 +6,7 @@ import DarkToggle from "./dark.jsx"
 import { useSession } from "next-auth/react"
 import { UserImage } from '../components/profile-img'
 
-function profileBnt() {
+function ProfileBnt() {
     const { data: session } = useSession()
     if (session) {
         return (
@@ -64,7 +64,7 @@ const Nav = () => {
                         <NavDaysButtons day="Viernes" />
                         <NavDaysButtons day="Perfil" />
 
-                        {profileBnt()}
+                        {ProfileBnt()}
 
                         <DarkToggle />
                     </div>
