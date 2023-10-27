@@ -2,7 +2,7 @@ import { signIn } from "next-auth/react"
 import { buttonVariants } from "./ui/button";
 
 
-export default function LoginBtn({ provider, children }) {
+export default function LoginBtn({ provider, bg, bgHover, children }) {
     return (
         <>
             <button
@@ -10,7 +10,7 @@ export default function LoginBtn({ provider, children }) {
                 className={`${buttonVariants({
                     size: "lg",
                     navButtons: "nav",
-                })} bg-sky-400 px-3 py-2 rounded hover:bg-sky-500`}
+                })} px-3 py-2 rounded ${bg} ${bgHover}`}
             >
                 {children}
             </button>
