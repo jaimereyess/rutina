@@ -62,6 +62,7 @@ const Nav = () => {
                         <NavDaysButtons day="Miércoles" />
                         <NavDaysButtons day="Jueves" />
                         <NavDaysButtons day="Viernes" />
+                        <NavDaysButtons day="General" />
                         <NavDaysButtons day="Perfil" />
 
                         {ProfileBnt()}

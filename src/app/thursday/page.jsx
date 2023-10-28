@@ -1,11 +1,13 @@
-import LeterDays from "../../components/days-letters";
+
 import ExerciseCard from "../../components/exercise-card";
+import TittleDay from "../../components/days-letters";
 
 function Thursday() {
     return (
         <main className="min-h-screen pb-2 grid dark:text-white dark:bg-black">
             <div>
-                <LeterDays day="Jueves" />
+                <TittleDay title="Jueves" />
+
                 <div className="m-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
 
                     <ExerciseCard exercisename={"PRESS INCLINADO EN MULTIPOWER"}
@@ -21,7 +23,7 @@ function Thursday() {
                         sets={3} repetitions={"10 - 12"} rir={"1 o 2"} />
 
                     <ExerciseCard exercisename={"CURL MARTILLO"}
-                        sets={5} repetitions={"1 x 10-12  /  3 x 12-15 / DS "} rir={"0 o 1"} />
+                        sets={4} repetitions={"1 x 10-12  /  3 x 12-15 / DS "} rir={"0 o 1"} />
 
                     <ExerciseCard exercisename={"EXTENSIÓN DE TRICEPS UNILATERAL"}
                         sets={4} repetitions={"1 x 10-12  /  3 x 12-15 "} rir={"0 o 1"} />

@@ -6,7 +6,8 @@ export const dayTranslation = {
     Miércoles: "wednesday",
     Jueves: "thursday",
     Viernes: "friday",
-    Perfil: "profile"
+    Perfil: "profile",
+    General: "general"
 }
 
 function DayPanel({ day, exercises }) {
