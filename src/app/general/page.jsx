@@ -20,7 +20,7 @@ function General() {
                 </section>
 
                 <section className='p-4'>
-                    <span className='text-2xl text-center font-bold'>Tren superior</span>
+                    <span className='text-2xl text-center font-bold'>Tren Inferior</span>
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                         <Semanal exercise="Cuádriceps" sets={19} color={"text-violet-600"} />
                         <Semanal exercise="Isqueos" sets={11} color={"text-cyan-700"} />
