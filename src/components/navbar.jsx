@@ -20,8 +20,7 @@ function ProfileBnt() {
             <Link
                 href="/login "
                 className={`text-white p-10 rounded-md lg:inline-block lg:mt-0
-                            mr-4 py-2 h-11 px-8 bg-sky-400 hover:text-black hover:bg-white`}
-            >
+                            mr-4 py-2 h-11 px-8 bg-sky-400 hover:text-black hover:bg-white`}>
                 Sign In
             </Link>
         )
@@ -37,7 +36,7 @@ const Nav = () => {
 
     return (
         <>
-            <nav className="flex items-center justify-between flex-wrap  p-6 dark:bg-black dark:text-white">
+            <nav className="flex items-center justify-between flex-wrap  p-6 dark:bg-gradient-to-b dark:from-black dark:from-60% dark:to-bgDarkColor ">
                 <div className="flex items-center flex-shrink-0 mr-6">
                     <Link href="/" className="font-bold text-3xl tracking-tight dark:text-white">
                         Rutina
@@ -56,7 +55,6 @@ const Nav = () => {
                         }`} >
 
                     <div className="grid lg:flex">
-
                         <NavDaysButtons day="Lunes" />
                         <NavDaysButtons day="Martes" />
                         <NavDaysButtons day="Miércoles" />
@@ -64,9 +62,7 @@ const Nav = () => {
                         <NavDaysButtons day="Viernes" />
                         <NavDaysButtons day="General" />
                         <NavDaysButtons day="Perfil" />
-
                         {ProfileBnt()}
-
                         <DarkToggle />
                     </div>
                 </div>

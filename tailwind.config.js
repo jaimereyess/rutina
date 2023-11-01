@@ -16,14 +16,8 @@ module.exports = {
       },
     },
     extend: {
-      backgroundImage: {
-        'white-img': "url('/bg-white.png')",
-      },
-      backgroundColor: {
-        'full-black': '#000'
-      },
       colors: {
-
+        bgdarkColor: "#241e35",
         darkpurple: "#451952",
         maroon: "#662549",
         orange: "#F39F5A",

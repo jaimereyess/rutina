@@ -32,7 +32,7 @@ function Profile() {
             <div className='flex items-center justify-center pt-10'>
                 <LoginBtn provider="google" bg="bg-sky-400" bgHover="hover:bg-sky-500">Sign in with Google
                 </LoginBtn>
-                <LoginBtn provider="github" bg="bg-purple-500" bgHover="hover:bg-red-600">Sign in with Github
+                <LoginBtn provider="github" bg="bg-purple-500" bgHover="hover:bg-purple-600">Sign in with Github
                 </LoginBtn>
             </div>
         )

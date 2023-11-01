@@ -4,7 +4,7 @@ import TittleDay from "../../components/days-letters";
 
 function Thursday() {
     return (
-        <main className="min-h-screen pb-2 grid dark:text-white dark:bg-black">
+        <main className="min-h-screen pb-2 grid ">
             <div>
                 <TittleDay title="Jueves" />
 

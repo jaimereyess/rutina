@@ -5,7 +5,7 @@ import { exerciseColor } from '../../components/exercise-card'
 
 function General() {
     return (
-        <main className="min-h-screen pb-2 grid dark:text-white dark:bg-black p-6">
+        <main className="min-h-screen pb-2 grid p-6">
             <div>
                 <TittleDay title="Carga semanal" />
                 <section className='p-4'>

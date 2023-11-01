@@ -3,7 +3,7 @@ import ExerciseCard from "../../components/exercise-card";
 
 function Tuesday() {
     return (
-        <main className="min-h-screen pb-2 grid dark:text-white dark:bg-black">
+        <main className="min-h-screen pb-2 grid">
             <div>
                 <TittleDay title="Martes" />
                 <div className="m-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
