@@ -41,13 +41,17 @@ const Nav = () => {
                     <Link href="/" className="font-bold text-3xl tracking-tight dark:text-white">
                         Rutina
                     </Link>
+                    <span className='block md:hidden lg:hidden p-6'><DarkToggle /></span>
                 </div>
                 <div className="block lg:hidden">
                     <button
-                        className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+                        className="flex items-center px-3 py-2 rounded text-black border-2 shadow-2xl
+                            font-bold hover:text-black hover:bg-slate-200
+                            dark:text-white hover:dark:bg-slate-700"
                         onClick={toggleMenu}
                     >
-                        ☰
+                        <span className={`${isMenuOpen ? "hidden" : "block"}`}>☰</span>
+                        <span className={`${isMenuOpen ? "block" : "hidden"}`}>X</span>
                     </button>
                 </div>
                 <div
@@ -63,7 +67,7 @@ const Nav = () => {
                         <NavDaysButtons day="General" />
                         <NavDaysButtons day="Perfil" />
                         {ProfileBnt()}
-                        <DarkToggle />
+                        <span className='hidden md:block lg:block'><DarkToggle /></span>
                     </div>
                 </div>
             </nav>
