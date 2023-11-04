@@ -6,6 +6,9 @@ import DarkToggle from "./dark.jsx"
 import { useSession } from "next-auth/react"
 import { UserImage } from '../components/profile-img'
 
+import { buttonVariants } from "./ui/button";
+import { dayTranslation } from './days-panel';
+
 function ProfileBnt() {
     const { data: session } = useSession()
     if (session) {
@@ -59,13 +62,14 @@ const Nav = () => {
                         }`} >
 
                     <div className="grid lg:flex">
-                        <NavDaysButtons day="Lunes" />
-                        <NavDaysButtons day="Martes" />
-                        <NavDaysButtons day="Miércoles" />
-                        <NavDaysButtons day="Jueves" />
-                        <NavDaysButtons day="Viernes" />
-                        <NavDaysButtons day="General" />
-                        <NavDaysButtons day="Perfil" />
+
+                        <NavDaysButtons day="Lunes" click={toggleMenu} />
+                        <NavDaysButtons day="Martes" click={toggleMenu} />
+                        <NavDaysButtons day="Miércoles" click={toggleMenu} />
+                        <NavDaysButtons day="Jueves" click={toggleMenu} />
+                        <NavDaysButtons day="Viernes" click={toggleMenu} />
+                        <NavDaysButtons day="General" click={toggleMenu} />
+                        <NavDaysButtons day="Perfil" click={toggleMenu} />
                         {ProfileBnt()}
                         <span className='hidden md:block lg:block'><DarkToggle /></span>
                     </div>
