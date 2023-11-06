@@ -17,7 +17,7 @@ const NavDaysButtons = ({ day, click }) => {
                 variant: isActive ? "secondary" : "ghost",
                 size: "lg",
                 navButtons: "nav",
-            })} ease-in-out duration-300 `}
+            })}`}
             href={`/${dayTranslation[day]}`}
             onClick={click}
         >

@@ -6,9 +6,6 @@ import DarkToggle from "./dark.jsx"
 import { useSession } from "next-auth/react"
 import { UserImage } from '../components/profile-img'
 
-import { buttonVariants } from "./ui/button";
-import { dayTranslation } from './days-panel';
-
 function ProfileBnt() {
     const { data: session } = useSession()
     if (session) {
