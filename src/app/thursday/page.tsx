@@ -1,13 +1,11 @@
 import React from "react";
 import ExerciseCard from "../../components/exercise-card";
-import TittleDay from "../../components/days-letters";
 
 function Thursday() {
     return (
         <main className="min-h-screen pb-2 grid ">
             <div>
-                <TittleDay title="Jueves" />
-
+                <h1 className="title">Jueves</h1>
                 <div className="m-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
 
                     <ExerciseCard exercisename={"PRESS INCLINADO EN MULTIPOWER"}

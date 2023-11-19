@@ -1,12 +1,11 @@
 import React from 'react'
 import { Semanal } from '../../components/semanal'
-import TittleDay from '../../components/days-letters'
 
 function General() {
     return (
         <main className="min-h-screen pb-2 grid p-6">
             <div>
-                <TittleDay title="Carga semanal" />
+                <h1 className="title">Carga semanal</h1>
                 <section className='p-4'>
                     <span className='text-2xl text-center font-bold'>Tren superior</span>
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">

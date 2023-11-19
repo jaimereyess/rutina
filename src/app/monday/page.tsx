@@ -1,11 +1,10 @@
-import TittleDay from "../../components/days-letters";
 import ExerciseCard from "../../components/exercise-card";
 
 function Monday() {
     return (
         <main className="min-h-screen pb-2 grid">
             <div>
-                <TittleDay title="Lunes" />
+                <h1 className="title">Lunes</h1>
                 <div className="m-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
 
                     <ExerciseCard exercisename={"PRESS BANCA CON BARRA"}

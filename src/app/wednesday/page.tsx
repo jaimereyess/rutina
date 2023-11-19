@@ -1,13 +1,13 @@
 import React from "react";
-import TittleDay from "../../components/days-letters";
 import ExerciseCard from "../../components/exercise-card";
 
 function Wednesday() {
     return (
         <main className="min-h-screen pb-2 grid dark:text-white">
             <div>
-                <TittleDay title="Miércoles" />
+                <h1 className="title">Miércoles</h1>
                 <div className="m-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
+
                     <ExerciseCard exercisename={"SENTADILLA HACK"}
                         sets={3} repetitions={"1 x 6-8  /  2 x 8-10"} rir={"2 o 3"} />
 

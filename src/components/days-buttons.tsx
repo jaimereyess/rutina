@@ -7,7 +7,7 @@ import { dayTranslation } from './days-panel';
 
 interface NavavDaysBtnProps {
     day: keyof typeof dayTranslation;
-    click: any
+    click: () => void
 }
 
 const NavDaysButtons = ({ day, click }: NavavDaysBtnProps) => {
