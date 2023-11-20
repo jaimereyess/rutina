@@ -20,7 +20,6 @@ function Profile() {
                     className={`${buttonVariants({
                         variant: "secondary",
                         size: "lg",
-                        navButtons: "nav",
                     })} px-3 py-2 rounded `}
                 >
                     Sign out

@@ -16,7 +16,6 @@ export default function LoginBtn({ provider, bg, bgHover, children }: LoginBtnPr
                 onClick={() => signIn(provider)}
                 className={`${buttonVariants({
                     size: "lg",
-                    navButtons: "nav",
                 })} px-3 py-2 rounded ${bg} ${bgHover}`}
             >
                 {children}
