@@ -21,7 +21,6 @@ const NavDaysButtons = ({ day, click }: NavavDaysBtnProps) => {
             className={`${buttonVariants({
                 variant: isActive ? "secondary" : "ghost",
                 size: "lg",
-                navButtons: "nav",
             })}`}
             href={`/${dayTranslation[day]}`}
             onClick={click}
