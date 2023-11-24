@@ -1,3 +1,4 @@
+"use client"
 import {
     Card,
     CardContent,
@@ -5,6 +6,8 @@ import {
     CardTitle,
 } from "./ui/card";
 import { exercises } from "./zone-exercise";
+import { motion } from "framer-motion";
+import { itemAnimated } from "./animations";
 
 export const exerciseColor = (bodyPart: string) => {
     switch (bodyPart) {
@@ -45,21 +48,23 @@ const ExerciseCard = ({ exercisename, sets, repetitions, rir }: ExerciseCardProp
     const exerciseColorClass = exerciseColor(bodyPart as string);
 
     return (
-        <Card>
-            <CardHeader>
-                <CardTitle className={`text-2xl font-bold ${exerciseColorClass}`}>
-                    {exercisename}
-                </CardTitle>
-            </CardHeader>
-            <CardContent className="pb-2">
-                <section className="pt-4">
-                    <p>Series: {sets}</p>
-                    <p>Repeticiones: {repetitions}</p>
-                    <p>RIR: {rir}</p>
-                </section>
+        <motion.article variants={itemAnimated} >
+            <Card >
+                <CardHeader>
+                    <CardTitle className={`text-2xl font-bold ${exerciseColorClass}`}>
+                        {exercisename}
+                    </CardTitle>
+                </CardHeader>
+                <CardContent className="pb-2">
+                    <section className="pt-4">
+                        <p>Series: {sets}</p>
+                        <p>Repeticiones: {repetitions}</p>
+                        <p>RIR: {rir}</p>
+                    </section>
 
-            </CardContent>
-        </Card>
+                </CardContent>
+            </Card>
+        </motion.article >
     )
 }
 

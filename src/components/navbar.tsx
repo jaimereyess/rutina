@@ -37,9 +37,9 @@ const Nav = () => {
 
     return (
         <>
-            <nav className="flex items-center justify-between flex-wrap p-6 dark:bg-gradient-to-b dark:from-black dark:from-60% dark:to-bgDarkColor ">
+            <nav className="flex items-center justify-between flex-wrap p-6 dark:bg-gradient-to-b dark:from-black dark:from-60% dark:to-bgDarkColor select-none ">
                 <div className="flex items-center flex-shrink-0 mr-6">
-                    <Link href="/" className="font-bold text-3xl tracking-tight dark:text-white">
+                    <Link href="/" className="font-bold text-3xl tracking-tight dark:text-white ">
                         Rutina
                     </Link>
                     <span className='block md:hidden lg:hidden p-6'><DarkToggle /></span>
