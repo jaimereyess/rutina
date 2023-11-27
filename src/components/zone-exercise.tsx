@@ -1,3 +1,5 @@
+import { m } from "framer-motion";
+
 export const Zone = {
     CHEST: "Pecho",
     BACK: "Espalda",
@@ -7,12 +9,41 @@ export const Zone = {
     QUADS: "Cuádriceps",
     HAMSTRINGS: "Isquios",
     GLUTES: "Gluteos",
-    CALVES: "Gemelos"
+    CALVES: "Gemelos",
+    Posterior_Chain: "Cadena posterior",
 }
 
 export const exercises = [
     {
-        name: "PRESS BANCA CON BARRA",
+        name: "SENTADILLA",
+        bodyPart: Zone.QUADS
+    },
+    {
+        name: "SENTADILLA HACK",
+        bodyPart: Zone.QUADS
+    },
+    {
+        name: "FEMORAL ACOSTADO",
+        bodyPart: Zone.HAMSTRINGS
+    },
+    {
+        name: "FEMORAL SENTADO",
+        bodyPart: Zone.HAMSTRINGS
+    },
+    {
+        name: "EXTENSIÓN DE CUÁDRICEPS",
+        bodyPart: Zone.QUADS
+    },
+    {
+        name: "PREDICADOR BICEPS",
+        bodyPart: Zone.BICEPS
+    },
+    {
+        name: "GEMELOS",
+        bodyPart: Zone.CALVES
+    },
+    {
+        name: "PRESS BANCA",
         bodyPart: Zone.CHEST
     },
     {
@@ -20,39 +51,31 @@ export const exercises = [
         bodyPart: Zone.CHEST
     },
     {
-        name: "PRESS FRANCÉS EN POLEA",
+        name: "TRICEPS CON BARRA",
         bodyPart: Zone.TRICEPS
     },
     {
-        name: "ELEVACIONES LATERALES CON POLEA DE PIE",
-        bodyPart: Zone.DELTOIDS
-    },
-    {
-        name: "ELEVACIONES LATERALES CON MANCUERNAS SENTADO",
-        bodyPart: Zone.DELTOIDS
-    },
-    {
-        name: "EXTENSIONES DE TRICEPS EN POLEA CON SOGA",
+        name: "TRICEPS UNILATERAL",
         bodyPart: Zone.TRICEPS
     },
     {
-        name: "PRESS EN MAQUINA",
-        bodyPart: Zone.CHEST
+        name: "ELEVACIONES LATERALES CON POLEA",
+        bodyPart: Zone.DELTOIDS
     },
     {
-        name: "REMO CON BARRA",
+        name: "ELEVACIONES FRONTALES CON MANCUERNAS",
+        bodyPart: Zone.DELTOIDS
+    },
+    {
+        name: "REMO T",
         bodyPart: Zone.BACK
     },
     {
-        name: "DOMINADAS CON AYUDAS",
+        name: "JALÓN CERRADO",
         bodyPart: Zone.BACK
     },
     {
         name: "CURL DE BICEPS CON BARRA W",
-        bodyPart: Zone.BICEPS
-    },
-    {
-        name: "PREDICADOR CON MANCUERNAS",
         bodyPart: Zone.BICEPS
     },
     {
@@ -64,77 +87,42 @@ export const exercises = [
         bodyPart: Zone.BACK
     },
     {
-        name: "SÓLESOS",
-        bodyPart: Zone.CALVES
+        name: "PRESS MILITAR MULTIPOWER",
+        bodyPart: Zone.DELTOIDS
     },
     {
-        name: "SENTADILLA HACK",
+        name: "PRESS MILITAR / ARNOLD",
+        bodyPart: Zone.DELTOIDS
+    },
+    {
+        name: "PRENSA SHORIZONTAL",
         bodyPart: Zone.QUADS
     },
     {
-        name: "PRENSA HORIZONTAL",
+        name: "PRENSA",
         bodyPart: Zone.QUADS
     },
     {
-        name: "CURL FEMORAL ACOSTADO",
+        name: "FEMORAL ACOSTADO",
         bodyPart: Zone.HAMSTRINGS
     },
     {
-        name: "EXTENSIÓN DE CUADRICEPS",
-        bodyPart: Zone.QUADS
+        name: "PESO MUERTO",
+        bodyPart: Zone.Posterior_Chain
     },
     {
-        name: "PATADA DE GLÚTEOS",
-        bodyPart: Zone.GLUTES
-    },
-    {
-        name: "GEMELOS",
-        bodyPart: Zone.CALVES
-    },
-    {
-        name: "PRESS INCLINADO EN MULTIPOWER",
-        bodyPart: Zone.CHEST
-    },
-    {
-        name: "REMO T",
+        name: "JALÓN NEUTRO",
         bodyPart: Zone.BACK
     },
     {
-        name: "PRESS BANCA CON MANCUERNAS",
-        bodyPart: Zone.CHEST
-    },
-    {
-        name: "JALÓN AGARRE NEUTRO",
+        name: "FACEPULL",
         bodyPart: Zone.BACK
     },
     {
-        name: "CURL MARTILLO",
+        name: "MARTILLO SENTADO",
         bodyPart: Zone.BICEPS
     },
-    {
-        name: "EXTENSIÓN DE TRICEPS UNILATERAL",
-        bodyPart: Zone.TRICEPS
-    },
-    {
-        name: "PESO MUERTO RUMANO",
-        bodyPart: Zone.HAMSTRINGS
-    },
-    {
-        name: "PRENSA A 45º",
-        bodyPart: Zone.QUADS
-    },
-    {
-        name: "CURL FERMORAL ACOSTADO",
-        bodyPart: Zone.HAMSTRINGS
-    },
-    {
-        name: "EXTENSIÓN DE CUADRICEPS",
-        bodyPart: Zone.QUADS
-    },
-    {
-        name: "HIP TRUST",
-        bodyPart: Zone.GLUTES
-    },
+
 ];
 
 

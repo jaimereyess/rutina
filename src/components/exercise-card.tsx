@@ -29,6 +29,8 @@ export const exerciseColor = (bodyPart: string) => {
             return "text-purple-600";
         case 'Gemelos':
             return "text-yellow-600";
+        case 'Cadena posterior':
+            return "text-sky-600";
     }
 }
 
@@ -36,10 +38,9 @@ interface ExerciseCardProps {
     exercisename: string
     sets: number
     repetitions: string
-    rir: string
 }
 
-const ExerciseCard = ({ exercisename, sets, repetitions, rir }: ExerciseCardProps) => {
+const ExerciseCard = ({ exercisename, sets, repetitions }: ExerciseCardProps) => {
 
     const exercise = exercises.find(exercise => exercise.name === exercisename);
 
@@ -59,7 +60,6 @@ const ExerciseCard = ({ exercisename, sets, repetitions, rir }: ExerciseCardProp
                     <section className="pt-4">
                         <p>Series: {sets}</p>
                         <p>Repeticiones: {repetitions}</p>
-                        <p>RIR: {rir}</p>
                     </section>
 
                 </CardContent>
